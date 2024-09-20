@@ -15,16 +15,149 @@
             <a href="mailto:avishijain26@gmail.com" target="_blank" title="Send Email!"><img src="./Images/email (1).png" alt="click to send mail" height="35px" class="buttons"></a>
         </div>
     </header>
-    <main>
-        <h2 style="text-align: center;">GALLERY PAGE</h2>
+    <main style="padding-top: 80px;">
+        <div class="workHeading" style="padding: 30px 0px;"><h2>Some of My Designs</h2></div>
+        <div class="grid-container">
+            <!-- 1st card -->
+            <div class="galleryCard">
+				<div class="content">
+					<div class="imgBx">
+						<img src="./Images/gallery page/cabin_gallery1.png">
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+                        <h3> Click to view pdf:</h3>
+					</li>
+					<li>
+                        <a href="./Images/gallery page/MEET SIE CABIN.pdf" target="_blank"><button class="workBtns">View Document</button></a>
+					</li>
+					
+				</ul>
+			</div>
+
+            <!-- 2nd card -->
+            <div class="galleryCard">
+				<div class="content">
+					<div class="imgBx">
+						<img src="./Images/gallery page/elevation_gallery2.jpeg">
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+                        <h3> Click to view pdf:</h3>
+					</li>
+					<li>
+                        <a href="./Images/gallery page/elevation .pdf" target="_blank"><button class="workBtns">View Document</button></a>
+					</li>
+					
+				</ul>
+			</div>
+
+            <!-- 3rd card -->
+            <div class="galleryCard">
+				<div class="content">
+					<div class="imgBx">
+						<img src="./Images/gallery page/Alpesh_Residence_gallery3.jpeg">
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+                        <h3> Click to view pdf:</h3>
+					</li>
+					<li>
+                        <a href="./Images/gallery page/Alpesh Bhai Residence.pdf" target="_blank"><button class="workBtns">View Document</button></a>
+					</li>
+					
+				</ul>
+			</div>
+
+            <!-- 4th card -->
+            <div class="galleryCard">
+				<div class="content">
+					<div class="imgBx">
+						<img src="./Images/gallery page/Baheti_gallery4.jpeg">
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+                        <h3> Click to view pdf:</h3>
+					</li>
+					<li>
+                        <a href="./Images/gallery page/Baheti Final renders final.pdf" target="_blank"><button class="workBtns">View Document</button></a>
+					</li>
+					
+				</ul>
+			</div>
+
+            <!-- 5th card -->
+            <div class="galleryCard">
+				<div class="content">
+					<div class="imgBx">
+						<img src="./Images/gallery page/jatin_gallery5.jpeg">
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+                        <h3> Click to view pdf:</h3>
+					</li>
+					<li>
+                        <a href="./Images/gallery page/jatinhi Final Renders.pdf" target="_blank"><button class="workBtns">View Document</button></a>
+					</li>
+					
+				</ul>
+			</div>
+
+            <!-- 6th card -->
+            <div class="galleryCard">
+				<div class="content">
+					<div class="imgBx">
+						<img src="./Images/gallery page/Living_room_gallery6.jpeg">
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+                        <h3> Click to view pdf:</h3>
+					</li>
+					<li>
+                        <a href="./Images/gallery page/LIVING ROOM UPDATED RENDERS.pdf" target="_blank"><button class="workBtns">View Document</button></a>
+					</li>
+					
+				</ul>
+			</div>
+            
+            
+        </div>
+
+        <div class="videoContainer">
+            <video src="./Images/gallery page/Orchid Legacy_D3-503.mp4" height="450px" width="auto" controls muted autoplay controlsList="nodownload"></video>
+        </div>
+
+        
     </main>
     <footer>
         <h2>Avishi Jain</h2>
         <div class="contactBtns">
-            <a href="tel:9826936503" title="Contact me!"><img src="./Images/phone-call.png" alt="click to call" height="35px" class="buttons"></a>
+            <a href="tel:9826936503" title="Contact me!"><img src="./Images/phone-call.png" alt="click to call" height="35px" class="buttons" style="margin-right: 15px;"></a>
             <a href="mailto:avishijain26@gmail.com" target="_blank" title="Send Email!"><img src="./Images/email (1).png" alt="click to send mail" height="35px" class="buttons"></a>
         </div>
         
     </footer>
+
+    <script>
+        
+        let allImages = document.querySelectorAll("img");
+        allImages.forEach((value)=>{
+            value.oncontextmenu = (e)=>{
+                e.preventDefault();
+            }
+        })
+
+        let video = document.querySelectorAll("video");
+        video.oncontextmenu = (e)=>{
+            e.preventDefault();
+        }
+        
+    </script>
 </body>
 </html>

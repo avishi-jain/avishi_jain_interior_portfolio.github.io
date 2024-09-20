@@ -57,5 +57,15 @@
         </div>
         
     </footer>
+    <script>
+        
+        let allImages = document.querySelectorAll("img");
+        allImages.forEach((value)=>{
+            value.oncontextmenu = (e)=>{
+                e.preventDefault();
+            }
+        })
+   
+    </script>
 </body>
 </html>
