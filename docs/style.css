@@ -62,9 +62,6 @@ header h3{
     scale: 1.2;
 }
 
-
-
-
 main{
     padding-top: 90px;
 }
@@ -114,6 +111,7 @@ main{
     display: grid;
     grid-auto-flow: column;
     place-content: center;
+    font-family: "subHeadings";
 }
 figure {
     display: grid;
@@ -223,9 +221,6 @@ figure {
     color: #011d0a;
 }
 
-.cards{
-    font-family: "subHeadings";
-}
 
 .flip-card {
     background-color: transparent;
@@ -381,3 +376,69 @@ figure {
   .videoContainer video{
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   }
+
+
+
+  /* Media Queries for Mobile */
+  @media only screen and (max-width: 376px) {
+    header{
+      padding: 8px 8px;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+     
+    header h1{
+      font-family:"MyHeadings";
+      font-size:xx-large;
+    }
+   
+    header h3{
+      font-family:"subHeadings"; 
+      font-size:x-large;
+    }
+
+    .sideHeader{
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .sideHeader a:nth-child(1){
+      margin-right: 160px;
+
+    }
+
+    main{
+      padding-top: 165px;
+    }
+
+    /* about section:Home page */
+    .about{
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px;
+      
+    }
+  
+  .description{
+      margin-left: 20px;
+  }
+  
+  .profileImg{
+      height: 400px;
+  }
+  .cards{
+    min-height: 90vh;
+    display: grid;
+    margin-top: 30px;
+    margin-left: 30px;
+    row-gap: 40px;
+    grid-auto-flow: row;
+    place-content: center;
+    font-family: "subHeadings";
+  }
+   
+  }  
+
+
